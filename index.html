@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adusumalli Durgaprasad Portfolio</title>
+
+  <!-- tailwind-->
+  
+   <link rel="stylesheet" href="tailo.css">
+
+  <!--gogglefont-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+
+    .reveal {
+      opacity: 0; 
+      transform: translateY(30px);
+      transition: 0.8s ease;
+    }
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .cursor::after {
+      content: '|';
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%,50%,100%{opacity:1}
+      25%,75%{opacity:0}
+    }
+  </style>
+</head>
+
+<body id="body" class="bg-[#0b0f1a] text-white scroll-smooth opacity-0 transition-opacity duration-1000">
+
+
+<!-- BACKGROUND -->
+<div class="fixed inset-0 -z-10">
+  <div class="absolute top-[15%] left-[-10%] w-[500px] h-[500px] bg-blue-400/10 rounded-full blur-[120px]"></div>
+  <div class="absolute top-[-10%] left-[30%] w-[500px] h-[500px] bg-lime-500/10 rounded-full blur-[120px]"></div>
+  <div class="absolute top-[30%] right-[-10%] w-[500px] h-[500px] bg-orange-400/20 rounded-full blur-[120px]"></div>
+  <div class="absolute bottom-[-20%] left-[30%] w-[500px] h-[500px] bg-red-500/20 rounded-full blur-[120px]"></div>
+</div>
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-[#0b0f1a]/80 backdrop-blur border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between">
+    <span class="font-bold">Durgaprasad.A</span>
+    <div class="hidden md:flex gap-6 text-slate-300">
+      <a href="#home" class="hover:text-cyan-400">Home</a>
+      <a href="#about" class="hover:text-cyan-400">About</a>
+      <a href="#skills" class="hover:text-cyan-400">Skills</a>
+      <a href="#education" class="hover:text-cyan-400">Education</a>
+      <a href="#projects" class="hover:text-cyan-400">Projects</a>
+      <a href="#achievements" class="hover:text-cyan-400">Achievements</a>
+      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="min-h-screen flex items-center pt-32 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center reveal">
+    <div>
+      <h1 class="text-5xl md:text-6xl font-extrabold">
+        Hi, I’m<br>
+        <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-400 bg-clip-text text-transparent">
+          Adusumalli Durgaprasad
+        </span>
+      </h1>
+      <p class="mt-4 text-xl text-slate-300">
+        <span id="role" class="cursor"></span>
+      </p>
+      <p class="mt-6 text-slate-400 max-w-xl">
+       AI Engineer skilled in DSA, Python, GenAI, and n8n—creator of the IJSET-published GestureX (OpenCV, Flask), crafting intelligent, elegant solutions.
+
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-xl text-black font-semibold">View Work</a>
+        <a href="#contact" class="px-6 py-3 border border-cyan-400 rounded-xl">Contact</a>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <div class="p-[3px] rounded-3xl bg-gradient-to-r from-indigo-500 to-pink-500">
+        <img src="c:\Users\durga\Downloads\WhatsApp Image 2026-01-27 at 9.13.09 PM.jpeg" class="w-72 h-72 rounded-3xl object-cover"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="py-28 px-6">
+  <div class="max-w-5xl mx-auto reveal">
+    <h2 class="text-4xl font-extrabold mb-6">About</h2>
+    <p class="text-slate-400 leading-relaxed text-lg">
+      I’m an AI Engineer and Computer Science student driven to build intelligent systems that solve real problems with clarity, elegance, and purpose. Grounded in strong DSA and problem-solving, I turn ideas into production-ready applications using Python, Flask, OpenCV, MediaPipe, modern web tech, and n8n automation.
+
+My IJSET-published project GestureX (Top 5 nationally recognized) showcases my passion for Computer Vision and human-computer interaction—where design meets intelligence.
+
+I craft technology that is not just functional, but intuitive, refined, and meaningfully human.
+
+    </p>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="py-28 px-6 bg-[#0f172a]">
+  <div class="max-w-6xl mx-auto reveal">
+    <h2 class="text-4xl font-extrabold mb-12">Skills</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-2xl border border-white/10">
+        <h3 class="font-semibold mb-4">Frontend</h3>
+        <p class="text-slate-400">HTML, CSS, Tailwind, JavaScript,<br>Flask(Backend)</p>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10">
+        <h3 class="font-semibold mb-4">AI</h3>
+        <p class="text-slate-400">Tools,n8n Automation,Prompting Techniques,Chatbots</p>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10">
+        <h3 class="font-semibold mb-4">Core CS</h3>
+        <p class="text-slate-400">DSA, OOPs, DBMS, OS, System Design</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="py-28 px-6">
+  <div class="max-w-5xl mx-auto reveal">
+    <h2 class="text-4xl font-extrabold mb-10">Education</h2>
+    <div class="p-6 border border-white/10 rounded-2xl">
+      <h3 class="text-xl font-semibold">B.Tech – Computer Science & Engineering</h3>
+      <p class="text-slate-400 mt-2">2025 – 2028<h2>Current</h2></p>
+    </div>
+  </div><br>
+   <div class="max-w-5xl mx-auto reveal">
+    <div class="p-6 border border-white/10 rounded-2xl">
+      <h3 class="text-xl font-semibold">Diploma in Computer Engineering</h3>
+      <p class="text-slate-400 mt-2  ">2022 – 2025 <h2>Percentage-96%</h2></p>
+    </div><br>
+    <div class="max-w-5xl mx-auto reveal">
+    <div class="p-6 border border-white/10 rounded-2xl">
+      <h3 class="text-xl font-semibold">School</h3>
+      <p class="text-slate-400 mt-2  ">2022 may passed out.<h2>Marks-558/600</h2></p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="py-28 px-6 bg-[#0f172a]">
+  <div class="max-w-6xl mx-auto reveal">
+    <h2 class="text-4xl font-extrabold mb-12">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="p-6 rounded-2xl border border-white/10 hover:border-cyan-400 transition">
+        <h3 class="font-semibold text-xl">GestureX</h3>
+        <p class="text-slate-400 mt-2">High-performance personal portfolio using Tailwind & JS.</p>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 hover:border-cyan-400 transition">
+        <h3 class="font-semibold text-xl">Task Management App</h3>
+        <p class="text-slate-400 mt-2">Full-stack productivity app with clean architecture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS ===== -->
+<section id="achievements" class="py-28 px-6">
+  <div class="max-w-5xl mx-auto reveal">
+    <h2 class="text-4xl font-extrabold mb-10">Achievements</h2>
+    <ul class="space-y-4 text-slate-400">
+      <li>• Solved 200+ DSA problems</li>
+      <li>• IJSET AUTHOR</li>
+      <li>• Consistently ranked top performer in academics</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="py-28 px-6 bg-[#0f172a]">
+  <div class="max-w-4xl mx-auto text-center reveal">
+    <h2 class="text-4xl font-extrabold mb-6">Contact</h2>
+    <p class="py-8 text-center border-t border-white/10 text-slate-400">© 2026 Adusumalli Durgaprasad. All Rights Reserved.</p><br>
+    <div class="flex justify-center gap-8">
+      <a href="https://github.com/AdusumalliDurgaprasad" class="hover:text-cyan-400">GitHub</a>
+      <a href="https://www.linkedin.com/in/adusumalli-durgaprasad/" class="hover:text-cyan-400">LinkedIn</a>
+      <a href="durgaprasadadusumalli142@gmail.com" class="hover:text-cyan-400">Email</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ===== JS ===== -->
+<script>
+  const roles=["AI Engineer","ML Engineer","Gen AI","Python Developer"];
+  let i=0,j=0,el=document.getElementById("role");
+  function type(){
+    if(j<roles[i].length){el.textContent+=roles[i][j++];setTimeout(type,70);}
+    else setTimeout(erase,1500);
+  }
+  function erase(){
+    if(j>0){el.textContent=roles[i].slice(0,--j);setTimeout(erase,40);}
+    else{i=(i+1)%roles.length;setTimeout(type,400);}
+  }
+  type();
+
+  const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add("show")),{threshold:.15});
+  document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
+
+  window.addEventListener('load', () => {
+  document.getElementById('body').classList.remove('opacity-0');
+});
+
+</script>
+
+</body>
+</html>
